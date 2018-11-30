@@ -8,8 +8,13 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-// Admin LTE
+// Admin LTE 3
 @import '~admin-lte/dist/css/adminlte.css';
+
+// Fontawesome 4
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
 
 .navbar-laravel {
   background-color: #fff;
