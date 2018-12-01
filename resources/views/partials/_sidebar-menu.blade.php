@@ -19,8 +19,8 @@
             </a>
             <ul class="nav nav-treeview">
                 <li £class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fas fa-circle nav-icon"></i>
+                    <a href="{{ route('garbage.index') }}" class="nav-link">
+                        <i class="fas fa-boxes nav-icon"></i>
                         <p>Data Sampah</p>
                     </a>
                 </li>
