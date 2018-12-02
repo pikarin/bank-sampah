@@ -21,7 +21,7 @@ class GarbageDeletionTest extends TestCase
         $response = $this->delete(route('garbage.destroy', $garbage));
 
         $response->assertRedirect(route('garbage.index'))
-            ->assertSessionHas('success', __('garbage.delete.success'));
+            ->assertSessionHas('success', __('garbage.success.delete'));
 
         $this->assertFalse($garbage->exists());
     }

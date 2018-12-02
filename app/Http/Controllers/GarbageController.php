@@ -84,7 +84,7 @@ class GarbageController extends Controller
         $garbage->update($request->all());
 
         return redirect()->route('garbage.index')
-            ->withSuccess(__('garbage.update.success'));
+            ->withSuccess(__('garbage.success.update'));
     }
 
     /**
@@ -98,6 +98,6 @@ class GarbageController extends Controller
         $garbage->delete();
 
         return redirect()->route('garbage.index')
-            ->withSuccess(__('garbage.delete.success'));
+            ->withSuccess(__('garbage.success.delete'));
     }
 }

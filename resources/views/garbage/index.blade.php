@@ -4,6 +4,8 @@
 
 @section('content')
 <div class="container-fluid">
+    @include('partials._alert-success')
+
     <a href="{{ route('garbage.create') }}" class="btn btn-primary btn-lg mb-3">
         {{ __('Add new garbage') }}
     </a>

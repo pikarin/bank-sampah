@@ -26,7 +26,7 @@ class GarbageUpdateTest extends TestCase
         ]);
 
         $response->assertRedirect(route('garbage.index'))
-            ->assertSessionHas('success', __('garbage.update.success'));
+            ->assertSessionHas('success', __('garbage.success.update'));
 
         tap($garbage->fresh(), function ($garbage) {
             $this->assertEquals('updated name', $garbage->name);
