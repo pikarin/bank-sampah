@@ -1,0 +1,25 @@
+@extends('layouts.master')
+
+@section('content')
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="card-title">{{-- title here --}}</h6>
+
+                        <dl class="row">
+                            <dt class="col-sm-3">{{-- column name here --}}</dt>
+                            <dd class="col-sm-9">{{-- column value here --}}</dd>
+                        </dl>
+
+                        <a href="{{ route('{{modelNamePluralLowerCase}}.index') }}" class="btn btn-outline-secondary">
+                            <i class="fas fa-arrow-left"></i>
+                            {{ __('Back') }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection

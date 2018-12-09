@@ -1,0 +1,9 @@
+<?php
+
+return [
+    'success' => [
+        'create' => '{{modelName}} created successfully',
+        'update' => '{{modelName}} updated successfully',
+        'delete' => '{{modelName}} deleted successfully',
+    ],
+];
